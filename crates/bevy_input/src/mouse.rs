@@ -32,6 +32,11 @@ pub enum MouseScrollUnit {
     Line,
     Pixel,
 }
+impl Default for MouseScrollUnit {
+    fn default() -> Self {
+        MouseScrollUnit::Line
+    }
+}
 
 /// A mouse scroll wheel event, where x represents horizontal scroll and y represents vertical scroll.
 #[derive(Debug, Clone)]
